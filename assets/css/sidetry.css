@@ -1,0 +1,120 @@
+.my_row{
+    display: inline-block;
+}
+
+.sidebar{
+    margin-right: 20% !important;
+    margin-left: 25px !important;
+}
+
+.entry{
+    position: relative;
+    right: 10% !important;
+    float: right;
+    border-style: none !important;
+    box-shadow: none !important;
+}
+
+.entry-content{
+    position: relative;
+}
+
+.hide-show{
+    display: none;
+}
+
+@media all and (max-width: 1000px){
+/*    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        order: 1;
+    }
+    .col-lg-4{
+        order: 2;
+    }
+*/
+
+    .entry{
+        right: 0 !important;
+    }
+
+    .sidebar{
+        width: 100%;
+        float: center;
+    }
+
+    .changer{
+        display:none;
+    }
+
+    .hide-show{
+        display: block;
+        margin-left: 40px;
+        background-color: white;
+        border-color: #028DAF;
+        border-radius: 5px;
+    }
+
+    hide-show:active, hide-show:hover{
+        border-color: white;
+        color: #028DAF;
+    }
+
+    .sidebar-title{
+        display: none;
+    }
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  padding: 6px 8px 6px 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: yellow;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav
+  font-size: 20px; /* Increased text to enable scrolling
+  padding: 0px 10px;
+}*/
+
+/* Add an active class to the active dropdown button */
+.active2 {
+  background-color: none;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container{
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dropdown-container a{
+  transition: all 0.3s linear;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  padding-left: 2px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: grey;
+}
