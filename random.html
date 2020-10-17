@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random</title>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script>
+        function upload() {
+  var fileinput = document.getElementById('fileupld');
+  var image = new SimpleImage(fileinput);
+  var canvas = document.getElementById('canv');
+  image.drawTo(canvas);
+}
+    </script>
+    <style>
+        canvas{
+  border: 2px solid black;
+
+  height: 250px;
+  margin: 15px;
+}
+h1{
+  font-family: "Comic Sans MS";
+  color: teal;
+  margin: 15px;
+}
+p{
+  margin: 15px;
+}
+#t{
+  font-size: 10px;
+}
+    </style>
+</head>
+<body>
+<h1>Display Image</h1>
+<canvas id='canv'></canvas>
+<div>
+  <input id='fileupld' type='file' accept='image/*' multiple='false' onchange='upload()'>
+</div>
+</body>
+</html>
