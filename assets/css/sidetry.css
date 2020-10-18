@@ -118,3 +118,15 @@
   font-size: 18px;
   color: grey;
 }
+
+.mychange{
+    margin-left: 20px;
+    padding-left: 18px;
+    margin-top: 60px;
+}
+
+.highlight {
+    color: #32627b;
+    font-weight: bold;
+    font-size: 13px;
+}
